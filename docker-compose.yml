@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    # Define um nome fixo para o contêiner para fácil referência.
+    container_name: api
+    # Injeta variáveis de ambiente no contêiner.
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    
